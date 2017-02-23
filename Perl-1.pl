@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 use strict;
-
+use module test
 
 # pg 25 Perl Functions for List Data - How to Tutorial.pdf
 my @array1 = (1, 2, 3, 5, 7, 23, 8, 14, 95, 19);
