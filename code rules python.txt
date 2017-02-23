@@ -1,0 +1,158 @@
+Error Phython
+
+ IndentationError: unindent does not match any 
+outer indentation level
+
+for 
+class HelloApp:
+      def __init__(self, master):
+
+end of classe
+
+next define main by
+
+-->>Error
+       def main():
+        
+        root = Tk()
+        root.title('Intro windows GUI USING Tk')
+        
+        app = HelloApp(root)
+        
+                  
+#====================
+# Start GUI 
+#======================
+        root.mainloop()
+if __name__=='__main__': main()
+
+def main, not in class object proceding it need to be no
+indention or tabs to define main():
+
+HP image
+
+C:\\Windows\\System32\\DriverStore\\FileRepository\\hpm1210.inf_amd64_neutral_55cf96b3893cb6ca\\P1210SIG.GIF
+
+
+
+
+object.pack() ==  geometry manager to display object change
+
+button.config(command=callback) - passes function def callback to execute
+
+button.invoke() simulte button click without doing click on button
+------ good for defining with out execution
+
+
+button.state(['disabled'])  --- disables button
+('!disabled',)
+
+button.state(['!disabled'])
+('disabled',)
+
+Create gif buttton
+>>>logo = PhotoImage(file = 'C:\\Windows\\System32\\DriverStore\\FileRepository\\hpm1210.inf_amd64_neutral_55cf96b3893cb6ca\\P1210SIG.GIF')
+>>>small_logo=logo.subsample(1,1)
+>>> button.config(image=small_logo)
+
+
+>>> label.img = logo
+>>> label.config(image = label.img)
+################################################################33
+>>> from tkinter import *
+>>> from tkinter import ttk
+>>> root=Tk()
+>>> def callback():
+	print('click')
+
+	
+>>> button=ttk.Button(root, text='Click Me Silly', command = callback)
+>>> button.pack
+<bound method Pack.pack_configure of <tkinter.ttk.Button object .55251744>>
+>>> button.pack()
+>>> click
+click
+click
+click
+click
+
+>>> label=ttk.Label(root, text =' hello ')
+>>> label.pack()
+>>> PhotoImage(file = 'C:\\Windows\\System32\\DriverStore\\FileRepository\\hpm1210.inf_amd64_neutral_55cf96b3893cb6ca\\P1210SIG.GIF')
+<tkinter.PhotoImage object at 0x00000000034D6D30>
+>>>  logo = PhotoImage(file = 'C:\\Windows\\System32\\DriverStore\\FileRepository\\hpm1210.inf_amd64_neutral_55cf96b3893cb6ca\\P1210SIG.GIF')
+>>> label.config(image = logo)
+SyntaxError: unexpected indent
+>>> 
+>>> logo = PhotoImage(file = 'C:\\Windows\\System32\\DriverStore\\FileRepository\\hpm1210.inf_amd64_neutral_55cf96b3893cb6ca\\P1210SIG.GIF')
+>>> small_logo=logo.subsample(2, 2)
+>>> button.config(image=small_logi)
+Traceback (most recent call last):
+  File "<pyshell#215>", line 1, in <module>
+    button.config(image=small_logi)
+NameError: name 'small_logi' is not defined
+>>> button.config(image=small_logo)
+
+>> from tkinter import *
+>>> from tkinter import ttk
+>>> root = Tk()
+>>> checkbutton=ttk.Checkbutton(root, text = 'CheckBo')
+>>> checkbutton.pack()
+>>> spam = StringVar()
+>>> spam.set('SPAM')
+>>> spam.get()
+'SPAM'
+>>> checkbutton.config(variable=spam, onvalue ='Spam please' , offvalue ='Spam off')
+>>> spam.get()
+'Spam off'
+>>> spam.get()
+'Spam off'
+>>> 
+>>> spam.get()
+'Spam off'
+>>> breakfast = StringVar()
+>>> ttk.Radiobutton(root, text ='SPAM' , variable = breakfast, value ='SPAM').pack()
+>>> ttk.Radiobutton(root, text ='SPAM' , variable = breakfast, value ='EGG').pack()
+>>>  ttk.Radiobutton(root, text ='EGGS' , variable = breakfast, value ='EGGS').pack()
+ 
+SyntaxError: unexpected indent
+>>> ttk.Radiobutton(root, text ='EGGS' , variable = breakfast, value ='EGGS').pack()
+>>> ttk.Radiobutton(root, text ='BACON' , variable = breakfast, value ='BACON').pack()
+>>> ttk.Radiobutton(root, text ='Sausage' , variable = breakfast, value ='Sausage').pack()
+>>> breakfast.get()
+'EGG'
+>>> breakfast.get()
+'BACON'
+>>> breakfast.get()
+'BACON'
+>>> breakfast.get()
+'Sausage'
+>>> breakfast.get()
+'SPAM'
+>>> breakfast.get()
+'EGG'
+>>> breakfast.get()
+'EGGS'
+>>> spam.get()
+'Spam off'
+>>> spam.get()
+'Spam please'
+>>> spam.get()
+'Spam off'
+>>> 
+
+
+>>> from tkinter import *
+>>> from tkinter import ttk
+>>> root = Tk()
+>>> entry=ttk.Entry(root, width =30)
+>>> entry.pack()
+>>> entry.get()
+'hello entr'
+>>> entry.delete(0,1)
+>>> entry.delete(0, END)
+>>> entry.insert(9, 'Enter Your PAssword')
+>>> entry.config(show ='*')
+>>> entry.get()
+'Enter Your PAssword'
+>>> 
